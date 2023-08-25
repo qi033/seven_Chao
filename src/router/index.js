@@ -37,7 +37,6 @@ const routes = [
         name: "ManAge",
         component: () => import("../views/Background/ManAge.vue"), //管理页面
         beforeEnter(to, from, next) {
-          console.log('独享路由守卫', to, from)
           if (localStorage.getItem('nema') === 'Chao') {
             next()
           } else {
