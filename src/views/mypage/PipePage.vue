@@ -155,16 +155,7 @@ export default {
             echarts: {},
         }
     },
-    // computed: {
-    //     formatLoginTime() {
-    //         if (this.loginTime) {
-    //             const loginDate = new Date(this.loginTime);
-    //             return loginDate.toLocaleString(); // 可以根据需要格式化展示时间
-    //         } else {
-    //             return "尚未登录";
-    //         }
-    //     }
-    // },
+
     mounted() {
         this.zhuzhuangtu1()
         this.zhexiantu1()
