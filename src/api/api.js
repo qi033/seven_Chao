@@ -5,13 +5,13 @@ axios.defaults.timeout = 30000
 
 axios.defaults.baseURL = process.env.VUE_APP_API_URL
 
-if (process.env.VUE_APP_MODE === 'development') {
-    console.log('开发');
-} else if (process.env.VUE_APP_MODE === 'test') {
-    console.log('测试');
-} else {
-    console.log('正式');
-}
+// if (process.env.VUE_APP_MODE === 'development') {
+//     console.log('开发');
+// } else if (process.env.VUE_APP_MODE === 'test') {
+//     console.log('测试');
+// } else {
+//     console.log('正式');
+// }
 axios.interceptors.request.use((config) => {
     return config
 }, (error) => {

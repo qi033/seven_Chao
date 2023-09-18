@@ -26,6 +26,22 @@ export function postHandled() {
 export function postEhart() {
     return post('index.php/index/index/getDatas')
 }
+export function CodePost(data) {
+    return post('index.php/index/callcenter/getheaders', data)
+
+}
+
+export function tagonPost(data) {
+    return post('index.php/index/upload/uploadimg', data)
+}
+
+export function tagonPost1(data) {
+    return post('index/callcenter/getheaders', data)
+}
+
+export function tagonPost2(data) {
+    return post('/index.php/index/index/mycenter', data)
+}
 
 //post方法
 function post(url, data) {

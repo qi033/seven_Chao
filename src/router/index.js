@@ -11,11 +11,7 @@ const routes = [
     component: HomeView,
     redirect: "/BackPage",
   },
-  {
-    path: "/about",
-    name: "about",
-    component: () => import("../views/AboutView.vue"),
-  },
+
   {
     path: "/logon",
     name: "logon",
@@ -31,6 +27,16 @@ const routes = [
         path: "/PipePage",
         name: "PipePage",
         component: () => import("../views/mypage/PipePage.vue"), //页面
+      },
+      {
+        path: "/about",
+        name: "about",
+        component: () => import("../views/AboutView.vue"),
+      },
+      {
+        path: "/CodePage",
+        name: "CodePage",
+        component: () => import("../views/mypage/CodePage.vue"), //作业
       },
       {
         path: "/ManAge",
@@ -65,17 +71,17 @@ const router = new VueRouter({
   routes,
 });
 
-router.beforeEach((to, from, next) => {
-  if (to.path == "/logon") {
-    next();
-  } else {
-    if (sessionStorage.getItem("Chao") != null) {
-      next();
-    } else {
-      alert("请登录");
-      next("/logon");
-    }
-  }
-});
+// router.beforeEach((to, from, next) => {
+//   if (to.path == "/logon") {
+//     next();
+//   } else {
+//     if (sessionStorage.getItem("Chao") != null) {
+//       next();
+//     } else {
+//       alert("请登录");
+//       next("/logon");
+//     }
+//   }
+// });
 
 export default router;
