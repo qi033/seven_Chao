@@ -45,7 +45,7 @@
                     <div class="PipeBox_top_you_top_son">
                         <div class="you_top_son_img">
                             <img src="../../assets/yemianimg/铃铛.png" alt="">
-                        </div>/^[\u4E00-\u9FA5](字第)([0-9a-zA-Z]{4,8})(号?)$/
+                        </div>
                         <div class="you_top_son_wenzi">
                             <b>{{ strip[1] ? strip[1].num : '' }}</b>
                             <p>{{ strip[1] ? strip[1].str : '' }}</p>
